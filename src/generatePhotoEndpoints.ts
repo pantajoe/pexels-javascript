@@ -3,13 +3,12 @@ import {
   Photo,
   PaginationParams,
   ErrorResponse,
-  Photos,
   PhotosWithTotalResults,
 } from "./types";
 import { isPhotos } from "./typeCheckers";
 
 type SearchReturn = PhotosWithTotalResults | ErrorResponse;
-type CuratedReturn = Photos | ErrorResponse;
+type CuratedReturn = PhotosWithTotalResults | ErrorResponse;
 type ShowReturn = Photo | ErrorResponse;
 type RandomReturn = Photo | ErrorResponse;
 
